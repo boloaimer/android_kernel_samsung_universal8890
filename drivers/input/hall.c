@@ -493,7 +493,7 @@ static int hall_probe(struct platform_device *pdev)
 #ifdef CONFIG_V_HALL_FOLDING
 	ddata->event_val = SW_FOLDING;
 #else
-	ddata->event_val = SW_LID;
+	ddata->event_val = SW_FLIP;
 #endif
 	input_set_capability(input, EV_SW, ddata->event_val);
 
